@@ -1,0 +1,15 @@
+C:\desenvolvimento\CursoAlura\Jenkins\GerenciadorMatriculas\GerenciadorMatriculas\bin\Debug\net6.0\GerenciadorMatriculas.exe
+C:\desenvolvimento\CursoAlura\Jenkins\GerenciadorMatriculas\GerenciadorMatriculas\bin\Debug\net6.0\GerenciadorMatriculas.deps.json
+C:\desenvolvimento\CursoAlura\Jenkins\GerenciadorMatriculas\GerenciadorMatriculas\bin\Debug\net6.0\GerenciadorMatriculas.runtimeconfig.json
+C:\desenvolvimento\CursoAlura\Jenkins\GerenciadorMatriculas\GerenciadorMatriculas\bin\Debug\net6.0\GerenciadorMatriculas.dll
+C:\desenvolvimento\CursoAlura\Jenkins\GerenciadorMatriculas\GerenciadorMatriculas\bin\Debug\net6.0\GerenciadorMatriculas.pdb
+C:\desenvolvimento\CursoAlura\Jenkins\GerenciadorMatriculas\GerenciadorMatriculas\obj\Debug\net6.0\GerenciadorMatriculas.csproj.AssemblyReference.cache
+C:\desenvolvimento\CursoAlura\Jenkins\GerenciadorMatriculas\GerenciadorMatriculas\obj\Debug\net6.0\GerenciadorMatriculas.GeneratedMSBuildEditorConfig.editorconfig
+C:\desenvolvimento\CursoAlura\Jenkins\GerenciadorMatriculas\GerenciadorMatriculas\obj\Debug\net6.0\GerenciadorMatriculas.AssemblyInfoInputs.cache
+C:\desenvolvimento\CursoAlura\Jenkins\GerenciadorMatriculas\GerenciadorMatriculas\obj\Debug\net6.0\GerenciadorMatriculas.AssemblyInfo.cs
+C:\desenvolvimento\CursoAlura\Jenkins\GerenciadorMatriculas\GerenciadorMatriculas\obj\Debug\net6.0\GerenciadorMatriculas.csproj.CoreCompileInputs.cache
+C:\desenvolvimento\CursoAlura\Jenkins\GerenciadorMatriculas\GerenciadorMatriculas\obj\Debug\net6.0\GerenciadorMatriculas.dll
+C:\desenvolvimento\CursoAlura\Jenkins\GerenciadorMatriculas\GerenciadorMatriculas\obj\Debug\net6.0\refint\GerenciadorMatriculas.dll
+C:\desenvolvimento\CursoAlura\Jenkins\GerenciadorMatriculas\GerenciadorMatriculas\obj\Debug\net6.0\GerenciadorMatriculas.pdb
+C:\desenvolvimento\CursoAlura\Jenkins\GerenciadorMatriculas\GerenciadorMatriculas\obj\Debug\net6.0\GerenciadorMatriculas.genruntimeconfig.cache
+C:\desenvolvimento\CursoAlura\Jenkins\GerenciadorMatriculas\GerenciadorMatriculas\obj\Debug\net6.0\ref\GerenciadorMatriculas.dll
