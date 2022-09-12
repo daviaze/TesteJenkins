@@ -4,6 +4,8 @@ namespace GerenciadorMatriculas.Testes
     {
         [Theory]
         [InlineData("Davi", "Sandra", "Marcos", "22", "Rua Silva Jardim, N 55, Rio de Janeiro")]
+        [InlineData("Bruno", "Thais", "Paulo", "26", "Rua Maria Es, N 100, Rio de Janeiro")]
+
         public void TestaMatricula(string nome, string nomeMae, string nomePai, string idade, string endereco)
         {
             //Arrange
