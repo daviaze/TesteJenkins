@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'docker-agent'  // Define o nome do agente no nível do pipeline
+        label 'agent1'  // Define o nome do agente no nível do pipeline
     }
     stages {
         stage('Build') {
