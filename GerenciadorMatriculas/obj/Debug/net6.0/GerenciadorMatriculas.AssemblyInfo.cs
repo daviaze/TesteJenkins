@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GerenciadorMatriculas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01157760a4a34eaa19dcd05eb84c79519d5c3b0a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+91c8cae1879eac1a1b5de60275a048ba9a306dd6")]
 [assembly: System.Reflection.AssemblyProductAttribute("GerenciadorMatriculas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GerenciadorMatriculas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
