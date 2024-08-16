@@ -3,9 +3,8 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh '''
-          dotnet --version
-        '''
+       def workspaceDir = env.WORKSPACE.replace('\\', '/').replace('C:', '/c')
+          sh "cd ${workspaceDir} && dotnet --version"
       }
     }
   }
