@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "GerenciadorMatriculas.Testes": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

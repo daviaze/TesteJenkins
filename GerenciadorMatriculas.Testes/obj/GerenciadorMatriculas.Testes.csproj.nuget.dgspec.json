@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\desenvolvimento\\CursoAlura\\Jenkins\\GerenciadorMatriculas\\GerenciadorMatriculas.Testes\\GerenciadorMatriculas.Testes.csproj": {}
+    "C:\\projetos\\testeJenkins\\TesteJenkins\\GerenciadorMatriculas.Testes\\GerenciadorMatriculas.Testes.csproj": {}
   },
   "projects": {
-    "C:\\desenvolvimento\\CursoAlura\\Jenkins\\GerenciadorMatriculas\\GerenciadorMatriculas.Testes\\GerenciadorMatriculas.Testes.csproj": {
+    "C:\\projetos\\testeJenkins\\TesteJenkins\\GerenciadorMatriculas.Testes\\GerenciadorMatriculas.Testes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\desenvolvimento\\CursoAlura\\Jenkins\\GerenciadorMatriculas\\GerenciadorMatriculas.Testes\\GerenciadorMatriculas.Testes.csproj",
+        "projectUniqueName": "C:\\projetos\\testeJenkins\\TesteJenkins\\GerenciadorMatriculas.Testes\\GerenciadorMatriculas.Testes.csproj",
         "projectName": "GerenciadorMatriculas.Testes",
-        "projectPath": "C:\\desenvolvimento\\CursoAlura\\Jenkins\\GerenciadorMatriculas\\GerenciadorMatriculas.Testes\\GerenciadorMatriculas.Testes.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\desenvolvimento\\CursoAlura\\Jenkins\\GerenciadorMatriculas\\GerenciadorMatriculas.Testes\\obj\\",
+        "projectPath": "C:\\projetos\\testeJenkins\\TesteJenkins\\GerenciadorMatriculas.Testes\\GerenciadorMatriculas.Testes.csproj",
+        "packagesPath": "C:\\Users\\Dev 2\\.nuget\\packages\\",
+        "outputPath": "C:\\projetos\\testeJenkins\\TesteJenkins\\GerenciadorMatriculas.Testes\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Dev 2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\desenvolvimento\\CursoAlura\\Jenkins\\GerenciadorMatriculas\\GerenciadorMatriculas\\GerenciadorMatriculas.csproj": {
-                "projectPath": "C:\\desenvolvimento\\CursoAlura\\Jenkins\\GerenciadorMatriculas\\GerenciadorMatriculas\\GerenciadorMatriculas.csproj"
+              "C:\\projetos\\testeJenkins\\TesteJenkins\\GerenciadorMatriculas\\GerenciadorMatriculas.csproj": {
+                "projectPath": "C:\\projetos\\testeJenkins\\TesteJenkins\\GerenciadorMatriculas\\GerenciadorMatriculas.csproj"
               }
             }
           }
@@ -51,6 +47,10 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.1.0, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.19.5, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -75,7 +75,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -84,25 +85,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\desenvolvimento\\CursoAlura\\Jenkins\\GerenciadorMatriculas\\GerenciadorMatriculas\\GerenciadorMatriculas.csproj": {
+    "C:\\projetos\\testeJenkins\\TesteJenkins\\GerenciadorMatriculas\\GerenciadorMatriculas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\desenvolvimento\\CursoAlura\\Jenkins\\GerenciadorMatriculas\\GerenciadorMatriculas\\GerenciadorMatriculas.csproj",
+        "projectUniqueName": "C:\\projetos\\testeJenkins\\TesteJenkins\\GerenciadorMatriculas\\GerenciadorMatriculas.csproj",
         "projectName": "GerenciadorMatriculas",
-        "projectPath": "C:\\desenvolvimento\\CursoAlura\\Jenkins\\GerenciadorMatriculas\\GerenciadorMatriculas\\GerenciadorMatriculas.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\desenvolvimento\\CursoAlura\\Jenkins\\GerenciadorMatriculas\\GerenciadorMatriculas\\obj\\",
+        "projectPath": "C:\\projetos\\testeJenkins\\TesteJenkins\\GerenciadorMatriculas\\GerenciadorMatriculas.csproj",
+        "packagesPath": "C:\\Users\\Dev 2\\.nuget\\packages\\",
+        "outputPath": "C:\\projetos\\testeJenkins\\TesteJenkins\\GerenciadorMatriculas\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Dev 2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -127,13 +124,20 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.19.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -142,7 +146,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

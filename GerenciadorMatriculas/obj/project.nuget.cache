@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5+tp2cAxcIjue/zWc0Ua0X89m7qavj6kSCFvfbigu5W7G+bZOX0eRJD4omQQkf4VNZ7x3+7V8iE8p+DiJEHcpw==",
+  "dgSpecHash": "A1q7rmGfo/h6ugdM5RrfSRJfwUkkCUk4CfId5gN6rgA2cAQcYdR26gH9LxWcVoBq0xNnmeGWiKGK8cpH2XQIMA==",
   "success": true,
-  "projectFilePath": "C:\\desenvolvimento\\CursoAlura\\Jenkins\\GerenciadorMatriculas\\GerenciadorMatriculas\\GerenciadorMatriculas.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\projetos\\testeJenkins\\TesteJenkins\\GerenciadorMatriculas\\GerenciadorMatriculas.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dev 2\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512"
+  ],
   "logs": []
 }

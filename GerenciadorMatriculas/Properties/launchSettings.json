@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "GerenciadorMatriculas": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

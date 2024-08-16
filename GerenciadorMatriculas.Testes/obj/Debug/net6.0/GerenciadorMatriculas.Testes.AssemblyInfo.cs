@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GerenciadorMatriculas.Testes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7902364a4168ef783a4c3783cd54d7fdad9893bc")]
 [assembly: System.Reflection.AssemblyProductAttribute("GerenciadorMatriculas.Testes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GerenciadorMatriculas.Testes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
