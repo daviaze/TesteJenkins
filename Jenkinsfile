@@ -1,21 +1,12 @@
 pipeline {
-  agent any
-  stages {
-    stage('Build Docker Image') {
-      steps {
-        script {
-          // Use o Dockerfile para construir a imagem
-          echo 'build'
-        }
-      }
+    agent {
+        docker { image 'node:20.18.0-alpine3.20' }
     }
-    stage('Run Tests') {
-      steps {
-        script {
-          // Execute o container como um container irmão
-          echo 'testes'
+    stages {
+        stage('Test') {
+            steps {
+                sh 'node --version'
+            }
         }
-      }
     }
-  }
 }
