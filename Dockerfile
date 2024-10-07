@@ -25,5 +25,4 @@ RUN dotnet publish "GerenciadorMatriculas.csproj" -c $BUILD_CONFIGURATION -o /ap
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-VOLUME [ "/var/run/docker.sock" ]
 ENTRYPOINT ["dotnet", "GerenciadorMatriculas.dll"]
