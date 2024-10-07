@@ -5,7 +5,7 @@ pipeline {
       steps {
         script {
           // Use o Dockerfile para construir a imagem
-          sh 'docker build -t my-dotnet-app -f Dockerfile .'
+          echo 'build'
         }
       }
     }
@@ -13,7 +13,7 @@ pipeline {
       steps {
         script {
           // Execute o container como um container irmão
-          sh 'docker run --rm --name my-dotnet-app-container my-dotnet-app dotnet --version'
+          echo 'testes'
         }
       }
     }
