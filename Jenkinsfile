@@ -4,7 +4,7 @@ pipeline {
             image 'docker:latest' // O Jenkins está sendo executado dentro deste contêiner Docker 
             args '-v /var/run/docker.sock:/var/run/docker.sock' // Montar o soquete Docker 
         } 
-    } 
+    }  
     steps { 
         stage('Checkout Code') { 
             steps { 
