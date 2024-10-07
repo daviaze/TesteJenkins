@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh 'dotnet --info'
+        bat 'dotnet version'
       }
     }
   }
