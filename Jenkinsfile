@@ -1,11 +1,19 @@
 pipeline { 
     agent any
     stages {
-        stage('Test Node.js') {
+        stage('Build Docker Image') {
             steps {
                 script {
-                    // Executa o comando para verificar a versão do Node.js
-                    sh 'docker run --rm --name test-node-app -v /var/run/docker.sock:/var/run/docker.sock node:20.18.0-alpine3.20 node --version'
+                    // Construa a imagem Docker no host
+                    sh 'docker build -t my-node-app .'
+                }
+            }
+        }
+        stage('Run Tests') {
+            steps {
+                script {
+                    // Execute o container no host
+                    sh 'docker run --rm --name test-node-app -v /var/run/docker.sock:/var/run/docker.sock my-node-app node --version'
                 }
             }
         }
