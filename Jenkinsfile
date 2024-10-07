@@ -1,8 +1,8 @@
 pipeline { 
     agent { 
         docker { 
-            image 'desktop-jenkins-1' // O Jenkins está sendo executado dentro deste contêiner Docker 
-            args '-v /var/run/docker.sock.raw:/var/run/docker.sock' // Montar o soquete Docker 
+            image 'desktop-jenkins-1' // O Jenkins está sendo executado dentro deste container Docker 
+            args '-v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/app' // Montar o soquete Docker e o diretório atual
         } 
     } 
     stages {
