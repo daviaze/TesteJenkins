@@ -1,7 +1,7 @@
 pipeline { 
     agent { 
         docker { 
-            image 'node:20.18.0-alpine3.20' // O Jenkins está sendo executado dentro deste contêiner Docker 
+            image 'desktop-jenkins-1' // O Jenkins está sendo executado dentro deste contêiner Docker 
             args '-v /var/run/docker.sock:/var/run/docker.sock' // Montar o soquete Docker 
         } 
     } 
