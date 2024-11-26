@@ -1,5 +1,11 @@
 pipeline {
-    agent { dockerfile true}
+    agent {     
+        dockerfile {
+            // Especifica o uso do Dockerfile no diretório raiz
+            filename 'Dockerfile'
+            // Opcional: argumentos adicionais para o docker
+            args '-v $HOME/.m2:/root/.m2'
+        }}
     stages {
         stage('Build') {
             steps {
