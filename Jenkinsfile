@@ -1,26 +1,31 @@
 pipeline {
-  agent {
+    agent {
         docker {
             image 'mcr.microsoft.com/dotnet/sdk:6.0'
+            args '-v /c/ProgramData/Jenkins/.jenkins/workspace:/workspace -w /workspace -e DOTNET_CLI_HOME=/workspace/.dotnet -e DOTNET_ROOT=/workspace/.dotnet'
         }
     }
     stages {
-        stage('Build') {
+        stage('Restore') {
             steps {
-                script {
-                    echo 'Building and testing the application...'
-                    sh 'dotnet restore GerenciadorMatriculas/GerenciadorMatriculas.csproj'
-                    sh 'dotnet --version' // Confirmação do ambiente
-                    sh 'dotnet build GerenciadorMatriculas.csproj'     // Construção do projeto
-                }
+                sh 'mkdir -p /workspace/.dotnet'
+                sh 'dotnet restore GerenciadorMatriculas/GerenciadorMatriculas.csproj'
             }
         }
-        stage('Test'){
+        stage('Build') {
             steps {
-                script {
-                    sh 'dotnet test'      // Testes
-                }
+                sh 'dotnet build GerenciadorMatriculas/GerenciadorMatriculas.csproj -c Release'
             }
+        }
+        stage('Test') {
+            steps {
+                sh 'dotnet test GerenciadorMatriculas/GerenciadorMatriculas.csproj -c Release'
+            }
+        }
+    }
+    post {
+        always {
+            echo 'Pipeline executado.'
         }
     }
 }
