@@ -14,12 +14,12 @@ RUN dotnet restore "GerenciadorMatriculas/GerenciadorMatriculas.csproj"
 # Copy everything else and build
 COPY . .
 WORKDIR "/src/GerenciadorMatriculas"
-RUN dotnet build "GerenciadorMatriculas.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet build "GerenciadorMatriculas.csproj"
 
 # Publish the project
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "GerenciadorMatriculas.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "GerenciadorMatriculas.csproj"
 
 # Final stage/image to run the app
 FROM base AS final
