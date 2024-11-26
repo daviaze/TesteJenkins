@@ -25,4 +25,6 @@ RUN dotnet publish "GerenciadorMatriculas.csproj" -c $BUILD_CONFIGURATION -o /ap
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "GerenciadorMatriculas.dll"]
+
+# Keep the container running, this will prevent it from exiting
+ENTRYPOINT ["tail", "-f", "/dev/null"]
