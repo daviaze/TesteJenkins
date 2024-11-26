@@ -15,7 +15,7 @@ pipeline {
         stage('Test'){
             agent any
             steps {
-                scripts {
+                script {
                     bat 'dotnet test'      // Testes
                 }
             }
