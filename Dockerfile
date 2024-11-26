@@ -1,12 +1,28 @@
-# Usar a imagem base do .NET SDK
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
-
-# Definir o diretório de trabalho
+# Base image for runtime
+FROM mcr.microsoft.com/dotnet/runtime:6.0 AS base
 WORKDIR /app
 
-# Instalar dependências, como o .NET, se necessário (mas o SDK já estará instalado na imagem)
+# Build image with SDK
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+ARG BUILD_CONFIGURATION=Release
+WORKDIR /src
 
-# Você pode adicionar outros comandos de configuração, se necessário
+# Copy the project file(s) and restore as distinct layers
+COPY ["GerenciadorMatriculas/GerenciadorMatriculas.csproj", "GerenciadorMatriculas/"]
+RUN dotnet restore "GerenciadorMatriculas/GerenciadorMatriculas.csproj"
 
-# Não é necessário fazer build ou restore aqui, apenas preparando o ambiente
-# Finalizamos o Dockerfile com a configuração necessária
+# Copy everything else and build
+COPY . .
+WORKDIR "/src/GerenciadorMatriculas"
+RUN dotnet build "GerenciadorMatriculas.csproj" -c $BUILD_CONFIGURATION -o /app/build
+
+# Publish the project
+FROM build AS publish
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "GerenciadorMatriculas.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+
+# Final stage/image to run the app
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "GerenciadorMatriculas.dll"]
