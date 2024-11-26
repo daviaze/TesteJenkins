@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('Restore') {
             steps {
-                sh 'mkdir -p /workspace/.dotnet'
                 sh 'dotnet restore GerenciadorMatriculas/GerenciadorMatriculas.csproj'
             }
         }
