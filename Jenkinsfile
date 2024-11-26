@@ -6,9 +6,10 @@ pipeline {
             steps {
                 script {
                     echo 'Building and testing the application...'
-                    sh 'dotnet --version' // Confirmação do ambiente
-                    sh 'dotnet build'     // Construção do projeto
-                    sh 'dotnet test'      // Testes
+                    bat 'dotnet restore'
+                    bat 'dotnet --version' // Confirmação do ambiente
+                    bat 'dotnet build'     // Construção do projeto
+                    bat 'dotnet test'      // Testes
                 }
             }
         }
