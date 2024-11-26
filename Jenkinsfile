@@ -2,7 +2,6 @@ pipeline {
     agent { dockerfile true }
     stages {
         stage('Build') {
-            agent { dockerfile true }
             steps {
                 script {
                     echo 'Building and testing the application...'
@@ -13,7 +12,6 @@ pipeline {
             }
         }
         stage('Test'){
-            agent { dockerfile true }
             steps {
                 script {
                     bat 'dotnet test'      // Testes
