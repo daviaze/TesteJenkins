@@ -1,10 +1,25 @@
 pipeline {
-    agent { dockerfile true }
+  agent {
+        docker {
+            image 'mcr.microsoft.com/dotnet/sdk:6.0'
+        }
+    }
     stages {
-        stage('Test') {
+        stage('Build') {
             steps {
-                echo 'node --version'
-                echo 'svn --version'
+                script {
+                    echo 'Building and testing the application...'
+                    sh 'dotnet restore GerenciadorMatriculas/GerenciadorMatriculas.csproj'
+                    sh 'dotnet --version' // Confirmação do ambiente
+                    sh 'dotnet build GerenciadorMatriculas.csproj'     // Construção do projeto
+                }
+            }
+        }
+        stage('Test'){
+            steps {
+                script {
+                    sh 'dotnet test'      // Testes
+                }
             }
         }
     }
