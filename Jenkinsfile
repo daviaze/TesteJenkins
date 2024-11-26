@@ -4,7 +4,7 @@ pipeline {
             // Especifica o uso do Dockerfile no diretório raiz
             filename 'Dockerfile'
             // Opcional: argumentos adicionais para o docker
-            args '-v jenkins_workspace:/workspace'
+            args "-v C:/ProgramData/Jenkins/.jenkins/workspace/teste-jenkins:/workspace"
         }}
     stages {
         stage('Build') {
