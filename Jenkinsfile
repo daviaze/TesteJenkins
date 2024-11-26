@@ -11,7 +11,7 @@ pipeline {
                     echo 'Building and testing the application...'
                     sh 'dotnet restore GerenciadorMatriculas/GerenciadorMatriculas.csproj'
                     sh 'dotnet --version' // Confirmação do ambiente
-                    sh 'dotnet build'     // Construção do projeto
+                    sh 'dotnet build GerenciadorMatriculas.csproj'     // Construção do projeto
                 }
             }
         }
