@@ -1,5 +1,8 @@
 pipeline {
-    agent { dockerfile true }
+    agent { 
+        dockerfile true
+        args '-v C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\teste-jenkins:C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\teste-jenkins'
+          }
     stages {
         stage('Build') {
             steps {
