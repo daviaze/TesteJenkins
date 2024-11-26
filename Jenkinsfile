@@ -9,7 +9,7 @@ pipeline {
             steps {
                 script {
                     echo 'Building and testing the application...'
-                    sh 'dotnet restore'
+                    sh 'dotnet restore GerenciadorMatriculas/GerenciadorMatriculas.csproj'
                     sh 'dotnet --version' // Confirmação do ambiente
                     sh 'dotnet build'     // Construção do projeto
                 }
