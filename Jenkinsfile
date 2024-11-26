@@ -1,10 +1,7 @@
 pipeline {
     agent {     
         dockerfile {
-            // Especifica o uso do Dockerfile no diretório raiz
             filename 'Dockerfile'
-            // Opcional: argumentos adicionais para o docker
-            args '-v /c/ProgramData/Jenkins/.jenkins/workspace/teste-jenkins:/src -w /src'
         }}
     stages {
         stage('Build') {
