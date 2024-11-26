@@ -2,11 +2,7 @@ pipeline {
     agent any
     stages {
         stage('Build and Test') {
-            agent {
-                docker {
-                    image 'mcr.microsoft.com/dotnet/sdk:6.0' // Imagem do .NET SDK
-                }
-            }
+            agent any
             steps {
                 script {
                     echo 'Building and testing the application...'
