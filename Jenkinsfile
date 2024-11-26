@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Build and Test') {
+        stage('Build') {
             agent any
             steps {
                 script {
@@ -9,6 +9,13 @@ pipeline {
                     bat 'dotnet restore'
                     bat 'dotnet --version' // Confirmação do ambiente
                     bat 'dotnet build'     // Construção do projeto
+                }
+            }
+        }
+        stage('Test'){
+            agent any
+            steps {
+                scripts {
                     bat 'dotnet test'      // Testes
                 }
             }
