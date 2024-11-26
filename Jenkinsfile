@@ -1,23 +1,24 @@
 pipeline {
-    agent {     
-        dockerfile {
-            filename 'Dockerfile'
-        }}
+  agent {
+        docker {
+            image 'mcr.microsoft.com/dotnet/sdk:6.0'
+        }
+    }
     stages {
         stage('Build') {
             steps {
                 script {
                     echo 'Building and testing the application...'
-                    bat 'dotnet restore'
-                    bat 'dotnet --version' // Confirmação do ambiente
-                    bat 'dotnet build'     // Construção do projeto
+                    sh 'dotnet restore'
+                    sh 'dotnet --version' // Confirmação do ambiente
+                    sh 'dotnet build'     // Construção do projeto
                 }
             }
         }
         stage('Test'){
             steps {
                 script {
-                    bat 'dotnet test'      // Testes
+                    sh 'dotnet test'      // Testes
                 }
             }
         }
