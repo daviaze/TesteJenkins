@@ -20,7 +20,7 @@ pipeline {
         stage('Test'){
             steps {
                 script {
-                    echo 'dotnet test'      // Testes
+                    sh 'dotnet test GerenciadorMatriculas/GerenciadorMatriculas.csproj'      // Testes
                 }
             }
         }
