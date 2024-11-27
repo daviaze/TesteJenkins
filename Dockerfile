@@ -27,4 +27,4 @@ WORKDIR /app
 COPY --from=publish /app/publish .
 
 # Keep the container running, this will prevent it from exiting
-ENTRYPOINT ["tail", "-f", "/dev/null"]
+ENTRYPOINT ["dotnet", "GerenciadorMatriculas.dll"]
