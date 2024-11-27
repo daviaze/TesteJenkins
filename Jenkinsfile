@@ -13,7 +13,7 @@ pipeline {
                     echo 'Building and testing the application...'
                     sh 'dotnet --version'
                     sh 'dotnet restore GerenciadorMatriculas/GerenciadorMatriculas.csproj'
-                    sh 'dotnet build GerenciadorMatriculas.csproj'     // Construção do projeto
+                    sh 'dotnet build GerenciadorMatriculas/GerenciadorMatriculas.csproj'     // Construção do projeto
                 }
             }
         }
